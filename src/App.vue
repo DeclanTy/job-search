@@ -1,6 +1,8 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello there" />
+  <div>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Hello there" />
+  </div>
 </template>
 
 <script>
