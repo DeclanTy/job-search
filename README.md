@@ -1,3 +1,6 @@
+!Do not be alarmed if you are a colleague from work who has found this!
+I am not looking for a jon, this is a tutorial code from a udemy course
+
 # job-search
 
 ## Project setup
