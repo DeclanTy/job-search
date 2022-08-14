@@ -5,9 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint",
-     "start" : "node"
+    "test:unit": "vue-cli-service test:unit --coverage",
+    "test:watch": "vue-cli-service test:unit --watch",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "autoprefixer": "^10",

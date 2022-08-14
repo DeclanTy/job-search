@@ -1,0 +1,31 @@
+/*
+.test.js
+.spec.js
+*/
+// 1st part: Like a chapter name in a book/ is there for organsation
+
+import { evenOrOdd, multiply } from "@/playground";
+describe("basic maths", () => {
+  it("adds two numbers", () => {
+    expect(1 + 1).toBe(2);
+  });
+
+  describe("evenOrOdd", () => {
+    describe("When numbe is even", () => {
+      it("indicates the number is even", () => {
+        expect(evenOrOdd(4)).toBe("Even");
+      });
+    });
+
+    describe("when the number is odd", () => {
+      it("indicates the number is odd", () => {
+        expect(evenOrOdd(3)).toBe("Odd");
+      });
+    });
+  });
+  describe("multiply", () =>{
+    it("multiples two numbers together", () => {
+        expect(multiply(2, 3)).toBe(6);
+    })
+  })
+});
