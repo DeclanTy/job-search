@@ -1,8 +1,8 @@
 <template>
   <MainNav></MainNav>
-  <!--Use a self closing tag wher no internal content is needed-->
+  <!--Use a self closing tag wher no content is needed-->
   <!--Call in the mainNav component-->
-  <main-nav />
+  <!-- <main-nav /> omponent object names can also be kebabed-->
 </template>
 <script>
 import MainNav from "@/components/MainNav.vue";
