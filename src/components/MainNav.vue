@@ -5,8 +5,6 @@
         class="flex flex-nowrap h-full px-8 mx-auto border-b border-solid order-brand-gray-1"
       >
         <a href="/" class="flex items-center text-xl">{{ company }}</a>
-        <h2 class="flex items-center h-full ml-8">Developed by {{ author.firstName }} {{author.lastName}}
-        </h2>
       </div>
     </div>
   </header>
@@ -20,10 +18,6 @@ export default {
   data(){
     return{
         company: "Boba Careers",
-        author: {
-            firstName: "Declan",
-            lastName: "Tyson",
-        },
         //This method of entering data in tags is forbideen in my team
         //May be called double gingering
     };
