@@ -12,6 +12,9 @@ module.exports = {
         "brand-green-1": "#137333",
         // to add defualt color names to tailwind
       },
+      boxShadow: {
+        blue: "0 0 3px 3px #4285f4",
+      },
     },
   },
   variants: {

@@ -2,13 +2,19 @@
   <header class="w-full text-sm">
     <div class="fixed top-0 left-0 w-full h-16 bg-white">
       <div
-        class="flex flex-nowrap h-full px-8 mx-auto border-b border-solid order-brand-gray-1"
+        class="
+          flex flex-nowrap
+          h-full
+          px-8
+          mx-auto
+          border-b border-solid
+          order-brand-gray-1
+        "
       >
         <a :href="url" class="flex items-center text-xl">{{ company }}</a>
 
         <nav class="h-full ml-12">
           <ul class="flex h-full p-0 m-0 list-none">
-
             <li
               v-for="menuItem in menuItems"
               :key="menuItem"
@@ -22,16 +28,27 @@
             </li>
           </ul>
         </nav>
+        <div class="flex items-center h-full ml-auto">
+          <profile-image v-if="isLoggedIn" data-test="profile-image" />
+          <action-button v-else data-test="login-button" @click="loginUser" />
+          <!--Same as js if else statement -->
+        </div>
       </div>
     </div>
   </header>
 </template>
 
 <script>
-//Typically this is used, standard export out of js file
+import ActionButton from "@/components/ActionButton";
+import ProfileImage from "@/components/ProfileImage";
+
 //{} sends out a js object
 export default {
   name: "MainNav",
+  components: {
+    ActionButton,
+    ProfileImage,
+  },
   //give a formal name to the component
   data() {
     return {
@@ -47,7 +64,13 @@ export default {
         "Students",
         "Jobs",
       ],
+      isLoggedIn: false,
     };
+  },
+  methods: {
+    loginUser() {
+      this.isLoggedIn = true;
+    },
   },
 };
 </script>
