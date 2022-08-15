@@ -30,7 +30,14 @@
         </nav>
         <div class="flex items-center h-full ml-auto">
           <profile-image v-if="isLoggedIn" data-test="profile-image" />
-          <action-button v-else data-test="login-button" @click="loginUser" />
+          <action-button
+            v-else
+            text="Log in"
+            type="primary"
+            data-test="login-button"
+            @click="loginUser"
+          />
+
           <!--Same as js if else statement -->
         </div>
       </div>
